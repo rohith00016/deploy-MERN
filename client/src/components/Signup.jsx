@@ -65,7 +65,7 @@ const Signup = () => {
 
     if (validateForm()) {
       try {
-        const response = await axios.post('https://mern-server-app.onrender.com/api/users/signup', formData);
+        const response = await axios.post('https://mern-server-u0ht.onrender.com/api/users/signup', formData);
         console.log(response.data);
 
         navigate('/login');
