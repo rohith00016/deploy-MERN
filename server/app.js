@@ -22,6 +22,10 @@ connectDB();
 app.use('/api/users', userRoutes);
 app.use('/api/profile', profileRoutes);
 
+app.get(req, res) {
+  res.json("server works well");
+});
+
 
 app.listen(PORT, () => {
   console.log(`Server is running on http://localhost:${PORT}`);
