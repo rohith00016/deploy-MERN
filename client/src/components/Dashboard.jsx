@@ -22,7 +22,7 @@ const Dashboard = () => {
   useEffect(() => {
     const fetchAdditionalInfo = async () => {
       try {
-        const response = await axios.get(`http://localhost:3000/api/profile/${userId}`);
+        const response = await axios.get(`https://mern-server-app.onrender.com/api/profile/${userId}`);
         const fetchedInfo = response.data || {};
 
         const formattedDate = fetchedInfo.dob ? format(new Date(fetchedInfo.dob), 'yyyy-MM-dd') : '';
@@ -55,7 +55,7 @@ const Dashboard = () => {
 
     try {
       console.log('Data to be sent:', { additionalInfo });
-      const response = await axios.put(`http://localhost:3000/api/profile/${userId}`, { ...additionalInfo });
+      const response = await axios.put(`https://mern-server-app.onrender.com/api/profile/${userId}`, { ...additionalInfo });
 
       if (response.data.message) {
         console.log(response.data.message);
