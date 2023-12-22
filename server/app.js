@@ -9,7 +9,7 @@ const cors = require('cors');
 const app = express();
 const PORT = 3000;
 app.use(cors({
-  origin: ['http://localhost:5173','https://mern-client-app.onrender.com'],
+  origin: ['http://localhost:5173','https://mern-client-96br.onrender.com'],
   methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
   credentials: true,
 }));
