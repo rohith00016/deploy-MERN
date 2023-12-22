@@ -22,7 +22,7 @@ const Dashboard = () => {
   useEffect(() => {
     const fetchAdditionalInfo = async () => {
       try {
-        const response = await axios.get(`https://mern-server-app.onrender.com/api/profile/${userId}`);
+        const response = await axios.get(`https://mern-server-u0ht.onrender.com'/api/profile/${userId}`);
         const fetchedInfo = response.data || {};
 
         const formattedDate = fetchedInfo.dob ? format(new Date(fetchedInfo.dob), 'yyyy-MM-dd') : '';
